@@ -1,90 +1,94 @@
-# 🌾 Ensemble-Based Crop Yield Prediction using Random Forest & XGBoost
+🌾 Crop Yield Prediction using Machine Learning
+📌 Overview
 
-## 📌 Overview
-This project focuses on predicting crop yield using machine learning techniques. It implements an **ensemble learning approach** by combining **Random Forest** and **XGBoost** models to achieve higher prediction accuracy and better generalization.
+This project focuses on predicting agricultural crop yield using Machine Learning techniques. It helps farmers and policymakers make data-driven decisions by analyzing historical agricultural data such as rainfall, fertilizer usage, pesticide usage, and crop type.
 
-The system analyzes agricultural and environmental factors such as rainfall, fertilizer usage, and crop type to estimate crop yield effectively.
+The system uses ensemble learning models to provide accurate yield predictions and includes a user-friendly interface for real-time input and results.
 
----
+🚀 Features
+Predict crop yield based on multiple input factors
+Uses advanced ML algorithms (Random Forest & XGBoost)
+Data preprocessing (handling missing values, encoding, scaling)
+Model comparison using performance metrics
+Simple and interactive UI built with Streamlit
+Helps in better crop planning and resource management
+🧠 Machine Learning Models Used
+🌲 Random Forest Regressor
+⚡ XGBoost Regressor
 
-## 🎯 Objective
-- Predict crop yield based on input features
-- Compare performance of multiple ML models
-- Improve prediction accuracy using ensemble techniques
-- Provide a simple and interactive user interface for predictions
+📊 Performance:
 
----
+Random Forest → R² Score: 99.45%
+XGBoost → R² Score: 98.92%
 
-## 🧠 Models Used
-- Random Forest Regressor
-- XGBoost Regressor
-- Ensemble Model (combination of both models)
+(Random Forest performed slightly better in this project )
 
----
+📂 Dataset Information
+Source: Kaggle Crop Yield Dataset
+Total Records: ~19,698
+Features:
+Crop
+Crop Year
+Season
+State
+Area
+Production
+Annual Rainfall
+Fertilizer
+Pesticide
+Target:
+Yield
+⚙️ Project Workflow
+Data Collection
+Data Preprocessing
+Handling missing values
+Encoding categorical data
+Feature scaling
+Train-Test Split (80% Training, 20% Testing)
+Model Training (RF & XGBoost)
+Hyperparameter Tuning (GridSearchCV)
+Model Evaluation (MAE, RMSE, R² Score)
+Deployment using Streamlit UI
+📊 Evaluation Metrics
+R² Score → Accuracy of prediction
+MAE (Mean Absolute Error) → Average error
+RMSE (Root Mean Square Error) → Penalizes large errors
+🖥️ Tech Stack
+Python
+Pandas, NumPy
+Scikit-learn
+XGBoost
+Matplotlib, Seaborn
+Streamlit
+💡 How It Works
+User inputs:
+Crop type
+Area
+Rainfall
+Fertilizer usage
+Pesticide usage
+Model processes the data
+Predicts expected crop yield
+Displays result instantly on UI
+📈 Results
+High prediction accuracy achieved using ensemble models
+Random Forest showed better performance with lower error rates
+Model effectively captures relationships between agricultural factors and yield
+🔮 Future Improvements
+Integration with real-time weather APIs
+Soil health analysis
+Satellite/drone data integration
+Mobile application for farmers
+Multi-language support for accessibility
+📌 Applications
+Smart farming
+Crop planning
+Resource optimization
+Government policy planning
+Agricultural analytics
+👩‍💻 Contributors
+Bhargavi
+Team Members
+📎 Conclusion
 
-## 📊 Dataset
-The dataset used in this project contains the following features:
-
-- Crop  
-- Crop_Year  
-- Season  
-- State  
-- Area  
-- Production  
-- Annual_Rainfall  
-- Fertilizer  
-- Pesticide  
-- Yield (Target Variable)
-
----
-
-## ⚙️ Methodology
-
-### 1. Data Preprocessing
-- Handled missing values  
-- Encoded categorical features  
-- Checked data consistency  
-
-### 2. Feature Engineering
-- Selected important features  
-- Analyzed correlations between variables  
-
-### 3. Model Training
-- Trained Random Forest model  
-- Trained XGBoost model  
-- Combined both models using ensemble approach  
-
-### 4. Model Evaluation
-- Mean Absolute Error (MAE)  
-- Root Mean Squared Error (RMSE)  
-- R² Score  
-
----
-
-## 📈 Results
-The ensemble model outperformed individual models by providing better accuracy and stability.
-
-| Model            | Performance |
-|------------------|------------|
-| Random Forest    | Good       |
-| XGBoost          | Better     |
-| Ensemble Model   | Best ✅     |
-
----
-
-## 💻 Tech Stack
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- XGBoost  
-- Matplotlib, Seaborn  
-- Streamlit  
-
----
-
-## 🚀 How to Run the Project
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/naikawadibhargavi/ML-PROJECT.git
-cd ML-PROJECT
+This project demonstrates how Machine Learning can significantly improve agricultural productivity by providing accurate and reliable crop yield predictions. It reduces dependency on guesswork and supports smart farming practices.
